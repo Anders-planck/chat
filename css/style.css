@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    scrollbar-color:#2d3436 ;
+scrollbar-face-color: #2d3436;
+scrollbar-highlight-color: #2d3436;
+scrollbar-track-color: #2d3436;
+scrollbar-width: 1px;
+}
+
+
+
+.containt{
+    background-color: #130f40;
+    display: flex;
+   flex-wrap: wrap;
+   position: relative;
+   justify-content: center;
+   align-items: center;
+margin:50px auto;
+width: 800px;
+border: 10px solid #2d3436;
+box-shadow:         -3px 7px 15px 0px rgba(50, 50, 50, 0.75);
+border-radius: 10px;
+}
+
+#user{
+flex: .15;
+max-width:300px ;
+height: 70vh;
+background-color: #2f3542;
+padding: 5px;
+border: 3px solid #a4b0be;
+border-right:3px solid #2f3542 ;
+overflow-y:scroll ;
+overflow: auto;
+}
+
+#messages{
+    border: 3px solid #a4b0be;
+border-right:3px solid #2f3542 ;
+    padding: 40px 10px;
+    display: block;
+    width:auto ;
+    flex:1;
+    background-image: url('../img/fondo.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+overflow-y:auto ;
+}
+
+.message{
+    min-width: 60%;
+    max-width: 200px;
+    min-height: 100px;
+    border-radius: 10px;
+    background-color:#a4b0be ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;  
+    position: relative;
+}
+
+
+.message::after,.message::before{
+    content: '';
+    width: 100%;
+    height: 10px;
+    bottom: 0px;
+    background-color: #ffffff;
+position: absolute;
+padding: 0px;
+border-radius: 3px;
+border-bottom: 1px solid #929292;
+border-top: 1px solid #929292;
+}
+.message::before{
+    bottom: -10px;
+    height: 10px;
+}
+.messageArrive{
+    float: left;
+    background-color:#ffffff ;
+    box-shadow:         -5px -3px 10px 0px rgba(212, 212, 212, 0.62);
+}
+.messageArrive::after,.messageArrive::before{
+    box-shadow:         -5px -3px 10px 0px rgba(212, 212, 212, 0.62);
+    background-color:  rgba(60, 101, 81, 0.93);;
+}
+.messageSend{
+    float: right;
+    background-color: #10ac84;
+    box-shadow:         5px -2px 12px 0px rgba(60, 101, 81, 0.93);}
+    .messageSend::after,.messageSend::before{
+        box-shadow:         5px -2px 12px 0px rgba(60, 101, 81, 0.93);
+    }
+.message img{
+    flex: .1;
+margin-left: 10px;
+border-radius: 6px;
+}
+.message .info{
+    flex: .9;
+position: relative;
+}
+.message .info p{
+    font-size: 1.3rem;
+    display: block;
+    padding: 2px;
+    margin: 5px;
+}
+
+.message .info span{
+position: absolute;
+right: 10px;
+top: 0;
+}
+
+
+
+
+body #login{
+    width: 100vw;
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position:absolute;
+   background-color: rgba(0,0,0,.6);
+   z-index: 1000;
+}
+
+#loginform{
+    padding: 10px;
+    text-align: center;
+    background: white;
+    width: 100vw;
+    height:19vh ;
+}
+
+#loginform h1{
+    font-size: 55px;
+    margin-bottom: .5rem;
+   
+}
+
+#loginform p{
+   margin-bottom: 30px;
+   text-transform: capitalize;
+}
+
+
+
+#loginform input{
+min-height: 40px;
+outline: none;
+font-size: 18px;
+margin-right: 20px;
+border-radius: 6px;
+padding: 5px;
+ }
+
+ input::placeholder{
+     padding: 10px;
+ }
+
+#invio{
+    text-align: center;
+    text-transform: uppercase;
+     width: 100px;
+     padding-left: 10px;
+     background-color: #4b4b4b;
+     color: white;
+     cursor: pointer;
+     transition: all .3s
+ }
+
+ #invio:hover{
+border: none;
+     background-color: #3faa5f;
+ }
+
+
+
+  #form{
+    border: 10px solid #a4b0be;
+    border-right:3px solid #2f3542 ;
+    position: absolute;
+    bottom: 0;
+    width: 86%;
+z-index: .5;
+right: 0;
+display: flex;
+background-color: white;
+     }
+
+     body{
+         background-color: #3498db;
+     }
+
+     #form > input{
+        min-height: 50px;
+        outline: none;
+        font-size: 20px;
+        border-radius: none;
+        padding: 5px;
+        border: none;
+     }
+     
+    #form #message{
+  flex: .85;
+  width: 80vw;
+  margin-right: 0;
+    }
+    
+    #form #send{
+        flex: .15;
+        margin-right: 0;
+text-transform: uppercase;
+font-weight: 600;
+transition: all .3s;
+cursor: pointer;
+ }
+ #form #send:hover{
+color: white;
+background-color: teal;
+ }
+
+ #user img{
+display: block;
+margin: 10px auto;
+border-radius: 6px;
+ }
